@@ -7,15 +7,15 @@
     <section class="hero-section text-center">
       <div class="container container--narrow">
         <div class="hero-section__box">
-          <h2>Search for <span>Programs to Enroll</span></h2>
+          <h2>Search for <span>Blogs</span></h2>
         </div>
 
         <div class="hero-section__search">
           <form id ='searchForm' class="form" action="{% url 'projects' %}" method="get">
             <div class="form__field">
-              <label for="formInput#search">Search By Programs </label>
+              <label for="formInput#search">Search By Blogs </label>
               <input class="input input--text" id="formInput#search" type="text" name="search_query"
-                value= "{{search_query}}"placeholder="Search by Programs Title"  />
+                value= "{{search_query}}"placeholder="Search by blogs Title"  />
             </div>
 
             <input class="btn btn--sub btn--lg" type="submit" value="Search" />

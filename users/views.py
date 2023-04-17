@@ -94,7 +94,7 @@ def userProfile(request,pk):
     context = {'profile': profile, 'topSkills':topSkills, 'otherSkills':otherSkills}
     return render (request, 'users/user-profile.html', context )
 
-@login_required(login_url = 'login')
+# @login_required(login_url = 'login')
 def userAccount(request):
     profile = request.user.profile
 
@@ -105,7 +105,7 @@ def userAccount(request):
     context = {'profile':profile, 'skills':skills, 'projects':projects}
     return render(request, 'account.html', context)
 
-@login_required(login_url = 'login')
+# @login_required(login_url = 'login')
 def editAccount(request):
     profile = request.user.profile
     form = ProfileForm(instance=profile)
@@ -161,7 +161,7 @@ def deleteSkill(request,pk):
     context = {'object': skill }
     return render(request, 'delete_template.html', context)
 
-@login_required(login_url='login')
+# @login_required(login_url='login')
 def contact(request):
     if request.method == "POST" :
         name = request.POST.get('name')

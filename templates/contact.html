@@ -1,5 +1,5 @@
 
-{% comment %} {% extends 'main.html' %} {% endcomment %}
+{% extends 'main.html' %}
 
 
 
@@ -51,7 +51,7 @@
 </div>
 
 <div class="container mb-3">
-  <a class="btn btn-primary my-20" href="{% url 'projects' %}">View Programs to Join  </a>
+  {% comment %} <a class="btn btn-primary my-20" href="{% url 'projects' %}">View Programs to Join  </a> {% endcomment %}
 
 </div>
 
